@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  min-width: 600px;
+  position: relative; }
+
+h1 {
+  color: #353e4a;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: black; }
+  a:focus {
+    border: 1px solid #f37021; }
+  a:hover {
+    color: #f37021;
+    transition: linear 0.2s all;
+    -webkit-transition: linear 0.2s all;
+    -moz-transition: linear 0.2s all;
+    -o-transition: linear 0.2s all; }
+
+button {
+  background: #f37021;
+  border: 1px solid #f37021;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  outline: 0;
+  margin-left: 10px;
+  padding: 10px; }
+  button:hover, button:focus {
+    background: #ee610d;
+    cursor: pointer;
+    transition: linear 0.2s all;
+    -webkit-transition: linear 0.2s all;
+    -moz-transition: linear 0.2s all;
+    -o-transition: linear 0.2s all; }
+
+header ul {
+  list-style-type: none;
+  float: right; }
+  header ul li {
+    border-left: 1px solid #ccc;
+    float: left;
+    height: 73px;
+    text-align: center;
+    width: 73px; }
+    header ul li a {
+      color: #ccc;
+      font-size: 3em;
+      line-height: 1.4; }
+header img {
+  float: left; }
+
+.sub {
+  background: #efefef;
+  border-top: 1px solid #b4bdca;
+  border-bottom: 1px solid #b4bdca;
+  padding: 10px; }
+
+#flyout {
+  position: absolute;
+  height: 100%;
+  background: white; }
+  #flyout p {
+    padding: 5px 0 0 20px; }
+
+nav {
+  padding: 20px; }
+
+table {
+  background: white;
+  border-collapse: collapse;
+  width: 95%;
+  margin: 0 auto; }
+
+td {
+  border: 1px solid #b4bdca;
+  padding: 10px;
+  text-align: center; }
+
+th {
+  background: #8dc63f;
+  padding: 10px;
+  border: 1px solid #353e4a;
+  font-weight: 400; }
+
+th.gene {
+  background: #0095d5; }
+
+select {
+  height: 30px;
+  border: 1px solid #b4bdca;
+  font-size: 14px;
+  background: #ffffff;
+  display: block;
+  margin: 10px 0;
+  outline: 0;
+  width: 100%; }
+  select:focus {
+    border: 1px solid #f37021; }
+
+input {
+  border: 1px solid #b4bdca;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out; }
+  input:focus {
+    border: 1px solid #f37021; }
+
+input[type="text"] {
+  height: 30px;
+  font-size: 16px;
+  background: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-left: 7px;
+  width: 100%; }
+
+input[type="checkbox"] {
+  height: 20px; }
+
+label {
+  margin-left: 5px; }
+
+.main-content {
+  padding: 20px;
+  height: 60%; }
+
+#list {
+  border: 1px solid #b4bdca;
+  float: left;
+  height: 100%;
+  padding: 1%;
+  vertical-align: top;
+  width: 20%; }
+  #list form {
+    height: 99%;
+    overflow: hidden; }
+  #list div {
+    padding: 5px; }
+    #list div:nth-child(even) {
+      background-color: #f5f5f5; }
+    #list div input[type="checkbox"], #list div label {
+      vertical-align: middle; }
+
+.list-overflow {
+  height: 100%;
+  overflow: scroll; }
+
+.subtext {
+  float: right;
+  font-size: 0.8em;
+  font-style: italic;
+  line-height: 2; }
+
+#chart {
+  float: left;
+  height: 100%;
+  width: 80%;
+  vertical-align: top; }
+
+#one, #two {
+  background: #efefef;
+  box-shadow: inset 0 0 1px; }
+
+#chart1, #chart2 {
+  float: left;
+  height: 100%;
+  margin-right: 1%;
+  padding: 1%;
+  width: 48%; }
+  #chart1 p, #chart2 p {
+    text-align: center;
+    padding: 5% 0 0 0; }
+  #chart1 img, #chart2 img {
+    height: 99%;
+    width: 100%; }
+
+#table {
+  background: #efefef;
+  height: auto;
+  min-height: 15%;
+  padding: 40px 20px 40px 20%;
+  overflow-x: scroll; }
+
+footer {
+  color: #b4bdca;
+  min-height: 10%;
+  padding: 10px;
+  line-height: 4;
+  text-indent: 50px; }
+
+.hide {
+  display: none; }
+
+.slideleft, .slideright {
+  width: 0;
+  overflow-y: hidden;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out; }
+
+.slideleft {
+  border: 0; }
+
+.slideright {
+  border-bottom: 3px solid #b4b4b4;
+  border-right: 3px solid #b4b4b4;
+  width: 450px; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
